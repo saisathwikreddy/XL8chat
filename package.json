@@ -1,5 +1,5 @@
 {
-  "name": "xl8-chat",
+  "name": "xl8chat",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,5 +12,9 @@
     "react": "^18",
     "react-dom": "^18",
     "next": "14.0.4"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4"
   }
 }
