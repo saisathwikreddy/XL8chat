@@ -1,5 +1,6 @@
 import Image from 'next/image'
-import styles from '~/assets/styles/page.module.scss'
+import styles from '~/assets/styles/page.module.scss';
+import Button from '@mui/material/Button';
 
 export default function Home() {
   return (
@@ -9,6 +10,9 @@ export default function Home() {
           Get started by editing&nbsp;
           <code className={styles.code}>app/page.js</code>
         </p>
+        <Button type="button">
+          Click Me
+        </Button>
         <div>
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
