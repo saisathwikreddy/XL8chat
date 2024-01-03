@@ -1,3 +1,4 @@
+// View ports layout
 @mixin mobile-only {
     @media (max-width: #{$mobile-view-ends}) {
         @content;

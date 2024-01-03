@@ -1,0 +1,41 @@
+@import '~/assets/styles/variables.scss';
+
+// Grid layout
+@for $i from 1 through $grid-columns {
+    $width: percentage($i / $grid-columns);
+    .col-sm-#{$i} {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .col-md-#{$i} {
+        flex-basis: $width;
+        max-width: $width;
+    }
+    .col-lg-#{$i} {
+        flex-basis: $width;
+        max-width: $width;
+    }
+}
+
+@media (max-width: 767px) {
+    @for $i from 1 through $grid-columns {
+        $width: percentage($i / $grid-columns);
+        .col-sm-#{$i} {
+            flex-basis: $width;
+            max-width: $width;
+        }
+        .col-md-#{$i}{
+            flex-basis: 100%; 
+            max-width: 100%;
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    @for $i from 1 through $grid-columns {
+        .col-lg-#{$i}{
+            flex-basis: 100%; 
+            max-width: 100%;
+        }
+    }
+}

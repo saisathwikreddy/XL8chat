@@ -16,7 +16,7 @@
     }
 
     @include desktop-only {
-      color: white
+      color: rgb(var(--foreground-rgb));
     }
   }
   &__info {
